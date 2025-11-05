@@ -17,8 +17,8 @@ const Navigation = () => {
     }
 
   return (
+    <>
     
-    <div>
         <div className='navToggle'>
           <button className="navButton" onClick={changeStyle}>
             <div className='navline'/>
@@ -35,7 +35,7 @@ const Navigation = () => {
       </nav>
       
       <Outlet />
-    </div>
+    </>
   );
 };
 
