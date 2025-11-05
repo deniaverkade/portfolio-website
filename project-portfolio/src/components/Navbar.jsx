@@ -1,4 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
+import NavList from './NavList';
 
 const Navigation = () => {
   return (
@@ -9,18 +10,9 @@ const Navigation = () => {
             <div className='navline'/>
         </div>
       <nav>
-        <ul>
-          <div className='cube'/>
-           <li><Link to="/">Hoofdpagina</Link></li>
-
-          <div className='cube'/>
-           <li><Link to="/project">Projecten</Link></li>
-
-          <div className='cube'/>
-           <li><Link to="/about">Over mij</Link></li>
-           
-          <div className='cube'/>
-           <li><Link to="/contact">Contact</Link></li>
+        <div className="navMenuBox"><div className="cube"></div><h1 className="navText">MENU</h1></div>
+        <ul className="ulFlex">
+          <NavList/>
         </ul>
       </nav>
       
