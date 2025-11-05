@@ -15,7 +15,7 @@ const NavList = (key,link) => {
     
     {links.map(l =>(
         <div key={l.id} className={l.class}>
-        <li key={l.id} ><div className={l.class2}><Link to={l.link}>{l.linkValue}</Link></div></li></div>
+        <li key={l.id} ><div className={l.class2}><Link to={l.link} >{l.linkValue}</Link></div></li></div>
     ))}
     </> );
 }

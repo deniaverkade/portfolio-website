@@ -17,6 +17,9 @@
 .navToggle {
   width: 70px;
   height: 70px;
+margin-left: 1.5%;
+  position:static
+
 }
 
 .navline {
@@ -27,18 +30,59 @@
   
 }
 
-nav {
-  height: 800px;
+.navButton {
+  background-color: #ffffff00;
+}
+
+.navButton:hover {
+  border-color: #ffffff00;
+}
+/*nav {
+  height: 840px;
   width: 500px;
-  background-color: black;
+  background-color: #444444;
   padding: 2%;
   padding-right: 4%;
-  
+
 font-family: Jockey One;
 
+}*/
+.navopen{
+  height: 800px;
+  width: 500px;
+  background-color: #444444;
+  padding: 2%;
+  padding-right: 4%;
+visibility:visible;
+font-family: Jockey One;
+margin-left: 3%;
+  transition: all .5s ease-in-out;
 }
 
 
+.navclose{
+  height: 0px;
+  width: 0px;
+  background-color: #444444;
+  padding: 2%;
+  padding-right: 4%;
+visibility: hidden;
+font-family: Jockey One;
+  transition: all .5s ease-in-out;
+}
+.navclose > * {
+  transition: all .1s ease-in-out;
+  visibility: hidden;
+  height:0px;
+  width:0px;
+  opacity: 0%;
+}
+
+.navopen > * {
+  transition: all .5s ease-in-out;
+  opacity: 100%;
+  visibility: visible;
+}
 
 .navText{
   color:#DBE1EE;
@@ -49,6 +93,7 @@ margin-top: 2.5%;
 margin-bottom: 5%;
 background-color:#5B2F9A;
 width: 450px;
+
 }
 
 .navMenuBox {
@@ -83,12 +128,12 @@ ul{
 }
 li{
 
-  margin-left: 10.7%;
+  margin-left: 9%;
  color:#5B2F9A;
  font-size: 190px;
  list-style: square;
  position: absolute;
- margin-top: -5%;
+ margin-top: -4%;
  
 }
 

@@ -6,7 +6,7 @@ import NoPage from "./Pages/NoPage";
 import Project from "./Pages/Project";
 import ProjectDetail from "./Pages/ProjectDetail";
 import Contact from "./Pages/Contact";
-import Navbar from "./components/Navbar";
+import Navigation from "./components/Navbar";
 import './App.css'
 
 
@@ -19,7 +19,7 @@ function App() {
     
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar/>}>
+        <Route path="/" element={<Navigation/>}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="*" element={<NoPage />} />
