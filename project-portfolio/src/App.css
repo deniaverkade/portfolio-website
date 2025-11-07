@@ -156,10 +156,12 @@ a{
  color:#DBE1EE;
  position: absolute;
  background-color:#5B2F9A;
- font-size: 47px;
+ font-size: 44px;
 width:300px;
 margin-top: 160%;
-
+padding-left: 30%;
+height: 65px;
+padding-bottom: 3%;
 
 
 
@@ -170,25 +172,25 @@ a:hover{
 }
 
 .li1 {
-background-color: rgb(212, 222, 231);
+background-color: #EEF3FF;
 margin-bottom: 2%;
 height:150px;
 }
 
 .li2 {
-background-color: rgb(212, 222, 231);
+background-color: #DBE1EE;
 margin-bottom: 2%;
 height:150px;
 }
 
 .li3 {
-background-color: rgb(212, 222, 231);
+background-color: #C9D4EB;
 margin-bottom: 2%;
 height:150px;
 }
 
 .li4 {
-background-color: rgb(212, 222, 231);
+background-color: #A5B7DE;
 
 height:150px;
 }
@@ -211,7 +213,62 @@ position: absolute;
  .homepage{
     width:100%;
     height: 100%;
-    background-color: #aa9eb9;
+    background-color: #DBE1EE;
 position:absolute;
 z-index: 0;
+}
+
+.imgcontainer {
+display: flex;
+height: 50%;
+width: 100%;
+flex-wrap: nowrap;
+flex-direction: row;
+}
+
+.h_img1 {
+height: 100%;
+width: 100%;
+}
+
+.h_img2 {
+  height: 100%;
+width: 100%;
+}
+
+.h_img3 {
+  height: 100%;
+width: 100%;
+}
+
+.homepagepic {
+height: 350px;
+width: 350px;
+border-radius: 50%;
+position: absolute;
+z-index: 2;
+border: 15px solid white;
+margin-top: -10%;
+margin-left: 40%;
+}
+
+.homepagebox {
+  font-family: Jockey One;
+  color: #32293F;
+}
+
+.homepageh1 {
+font-size: 70px;
+margin-top: 10%;
+margin-left: 44%;
+position: absolute;
+z-index: 3;
+}
+
+.homepageh2{
+font-size: 50px;
+margin-left: 43%;
+position: absolute;
+z-index: 3;
+margin-top: 14%;
 }

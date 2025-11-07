@@ -3,7 +3,16 @@
 const Home = () => {
     return ( 
     <div className="homepage">
-<h1>home</h1>
+        <div className="imgcontainer">
+            <img className="h_img1" src="../public/images/homepage_img1.jpg"/>
+            <img className="h_img2" src="../public/images/homepage_img2.jpg"/>
+            <img className="h_img3" src="../public/images/homepage_img3.jpg"/>
+        </div>
+        <img className="homepagepic" src="../public/images/homepage_profile.jpg"/>
+        <div className="homepagebox">
+        <h1 className="homepageh1">Portfolio</h1>
+        <h2 className="homepageh2">Denia Verkade</h2>
+        </div>
     </div>
      );
 }
