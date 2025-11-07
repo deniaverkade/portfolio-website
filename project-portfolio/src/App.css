@@ -59,11 +59,11 @@ font-family: Jockey One;
   width: 500px;
   background-color: #444444;
   padding: 2%;
-  padding-right: 4%;
+  padding-right: 2%;
 opacity:100%;
 font-family: Jockey One;
-margin-left: 3%;
-margin-top: 5%;
+margin-left: 6%;
+margin-top: 2.6%;
   transition: all 0.5s ease-in-out;
   position: absolute;
  z-index: 1;
@@ -78,11 +78,10 @@ margin-top: 5%;
   padding-right: 4%;
 opacity:0%;
 font-family: Jockey One;
-   animation-name:slideLeft;
-   animation-duration: 0.5s;
+
    transition: all 0.5s ease-in-out;
 margin-left: -50%;
-margin-top: 5%;
+margin-top: 2.6%;
 position: absolute;
 
 }
@@ -104,8 +103,8 @@ position: absolute;
   color:#DBE1EE;
   text-align: center;
 position: absolute;
-margin-left: 1.5%;
-margin-top: 2.5%;
+margin-left: 4.5%;
+margin-top: 7.5%;
 margin-bottom: 5%;
 background-color:#5B2F9A;
 width: 450px;
@@ -144,12 +143,12 @@ ul{
 }
 li{
 
-  margin-left: 9%;
+  margin-left: 28%;
  color:#5B2F9A;
  font-size: 190px;
  list-style: square;
  position: absolute;
- margin-top: -4%;
+ margin-top: -12.5%;
  
 }
 
@@ -212,7 +211,7 @@ position: absolute;
  .homepage{
     width:100%;
     height: 100%;
-    background-color: #e7daf7;
+    background-color: #aa9eb9;
 position:absolute;
 z-index: 0;
 }
