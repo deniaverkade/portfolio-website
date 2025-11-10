@@ -250,6 +250,7 @@ z-index: 2;
 border: 15px solid white;
 margin-top: -10%;
 margin-left: 40%;
+object-fit: cover;
 }
 
 .homepagebox {
@@ -272,3 +273,6 @@ position: absolute;
 z-index: 3;
 margin-top: 14%;
 }
+
+/* project pagina */
+
