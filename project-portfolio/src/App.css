@@ -276,3 +276,15 @@ margin-top: 14%;
 
 /* project pagina */
 
+.projectbody{
+  display:flex;
+}
+.sideboxproject{
+width: 40%;
+height: 100%;
+position: absolute;
+background-color: #A5B7DE;
+}
+.projectp {
+
+}
