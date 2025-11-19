@@ -1,8 +1,8 @@
 
-const ProjectCard = (key,projectimg,projectname,tags) => {
+const ProjectCard = (key,projectimg,projectname,{project,onShowDetail}) => {
     return ( <>
-    <div className="cardcontainer">
-        <img src={projectimg}></img>
+    <div className="cardcontainer" key={key}>
+        <button className="projectcard" onClick={() => onShowDetail(project.id)}><img src={projectimg}/></button>
         <h3 className="projectname">{projectname}</h3>
     </div>
     </> );

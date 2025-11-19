@@ -1,19 +1,38 @@
 import { Link, Outlet } from 'react-router-dom';
-
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import projectData from "../projects";
+import ProjectCard from '../components/ProjectCard';
 
 
 const Project = () => {
+    const navigate = useNavigate();
+    const [projectList, setProjectList] = useState([projectData]);
+
+    const goToDetail = (projectId)=> {
+        navigate(`/projectdetail/${projectId}`);
+    };
+
+    const projectMapping = projectList.map()(pro =>(
+        <ProjectCard
+        key={pro.id}
+        projectimg={pro.imgurl}
+        projectname={pro.name}
+        onShowDetail={goToDetail}/>
+    ))
+
     return ( <>
     <div className="projectbody">
-        <h1>PROJECTEN</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus tellus, auctor venenatis elementum ornare, consectetur vel mi. Maecenas gravida, augue non gravida porta, lectus felis tincidunt lectus, sed vehicula justo mi nec erat. Donec vel tempor massa, in posuere turpis. Morbi hendrerit aliquet malesuada. Sed placerat ornare dolor at dapibus. Integer mauris leo, faucibus in turpis at, pharetra malesuada libero. Sed maximus iaculis tortor placerat sollicitudin</p>
-        <h2>FILTERS</h2>
-        <button>RESET FILTER</button>
+        <h1 className="projecth1">PROJECTEN</h1>
+        <p className='propagetext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus tellus, auctor venenatis elementum ornare, consectetur vel mi. Maecenas gravida, augue non gravida porta, lectus felis tincidunt lectus, sed vehicula justo mi nec erat. </p>
+        <h2 className="filtertitle">FILTERS</h2>
+        <button className="resetfilter">RESET FILTER</button>
     </div>
         
         <div className="projectlist">
-<h1>Project pagina</h1>
-        <p><Link to="/projectdetail">Testlink voor detailpagina</Link></p>
+        <span className="containerProject">
+            {projectMapping}
+        </span>
         </div>
     
     </> );

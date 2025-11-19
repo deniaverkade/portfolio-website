@@ -25,7 +25,7 @@ function App() {
         <Route path="*" element={<NoPage />} />
         <Route path="contact" element={<Contact />} />
         <Route path="project" element={<Project />} />
-        <Route path="projectdetail" element={<ProjectDetail />} />
+        <Route path="/projectdetail/:projectId" element={<ProjectDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>

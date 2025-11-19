@@ -16,14 +16,15 @@ body {
   src: url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap')}
 
 
-
-
+.font-link{
+  font-family: Jetbrains Mono;
+}
 /* style navbar */
 .navToggle {
   width: 70px;
   height: 70px;
-margin-top: 2%;
-margin-left: 2%;
+margin-top: 1%;
+margin-left: 0.4%;
   position:absolute;
   z-index: 2;
 
@@ -276,3 +277,56 @@ margin-top: 14%;
 
 /* project pagina */
 
+.projectbody {
+  width: 30%;
+  height: 100%;
+  background-color: #DBE1EE;
+  position: absolute;
+  z-index: -1;
+}
+
+.projectlist {
+  width:100%;
+  height:100%;
+  background-color: #BCC4E8;
+  position: absolute;
+  z-index: -2;
+}
+
+.projecth1 {
+  background-color:#32293F ;
+  width: 70%;
+  margin-top: 2%;
+  margin-left: 20%;
+  font-family: Jockey One;
+  padding-left: 3%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+
+.propagetext {
+  font-family: Jetbrains Mono;
+  color: #5B2F9A;
+  margin-top: 5%;
+  padding: 7%;
+  font-size: 20px;
+  padding-left: 5%;
+}
+
+.filtertitle {
+  color: #32293F;
+  font-family: Jockey One;
+  font-size: 50px;
+  margin-left: 5%;
+  margin-top: 2%;
+  
+}
+
+.resetfilter{
+   font-family: Jockey One;
+   background-color: #DBE1EE;
+   font-size: 30px;
+   color: #32293F;
+   margin-left: -1.3%;
+
+}
