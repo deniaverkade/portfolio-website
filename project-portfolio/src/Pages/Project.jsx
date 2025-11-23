@@ -7,19 +7,22 @@ import ProjectCard from '../components/ProjectCard';
 
 const Project = () => {
     const navigate = useNavigate();
-    const [projectList, setProjectList] = useState([projectData]);
+    const [projectList, setProjectList] = useState(projectData);
+
+
 
     const goToDetail = (projectId)=> {
         navigate(`/projectdetail/${projectId}`);
     };
 
-    const projectMapping = projectList.map()(pro =>(
+    const projectMapping = projectList.map((pro =>(
         <ProjectCard
         key={pro.id}
+        project={pro}
         projectimg={pro.imgurl}
         projectname={pro.name}
         onShowDetail={goToDetail}/>
-    ))
+    )))
 
     return ( <>
     <div className="projectbody">
@@ -30,9 +33,9 @@ const Project = () => {
     </div>
         
         <div className="projectlist">
-        <span className="containerProject">
+        <div className="containerProject">
             {projectMapping}
-        </span>
+        </div>
         </div>
     
     </> );

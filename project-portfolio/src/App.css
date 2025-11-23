@@ -10,6 +10,7 @@ body {
   align-items: flex-start;
   height:0px;
   width: 0px;
+  z-index: -5;
 }
 @font-face {
   font-family: Jockey One; /* set name */
@@ -330,3 +331,119 @@ padding-bottom: 1%;
    margin-left: -1.3%;
 
 }
+
+.containerProject {
+  width: 70%;
+  height: 100%;
+  z-index: -1;
+  margin-left: 30%;
+  display: flex;
+      flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+/*projectcard */
+.cardcontainer {
+  width: 400px;
+  height: 400px;
+}
+
+.cardimg{
+  width: 275px;
+  height: 275px;
+  border: 5px solid #5B2F9A;
+}
+
+.projectcard {
+  background-color: #32293f00;
+  border: 0px;
+}
+
+.projectname{
+  background-color: #32293F;
+  font-family: Jockey One;
+  font-size: 28px;
+  width: 244px;
+  margin-left: 5%;
+  padding-left: 10%;
+}
+
+/* detail page */
+.detailbody {
+  width: 75%;
+  height: 100%;
+  background-color: #dbe1ee;
+  position: absolute;
+  z-index: -3;
+}
+
+.detailimg {
+  width: 100%;
+  height: 40%;
+  border-bottom: solid 20px white;
+  object-fit: cover;
+}
+
+.detailsidebar{
+  background-color: #897EB9;
+  width: 33.25%;
+  height: 101.39%;
+  margin-left: 100%;
+  z-index: -2;
+  position: absolute;
+  margin-top: -32.5%;
+}
+
+.sidebardivider{
+  background-color: #5B2F9A;
+  width: 80%;
+  height: 7%;
+  margin-left: 11%;
+  margin-top: 5%;
+}
+
+.sidebarimg{
+  width: 175px;
+  height: 175px;
+  margin-left: 30%;
+  margin-top: 3%;
+}
+
+.sidebartitle{
+  font-family: Jockey One;
+  font-size: 40px;
+  padding-left: 20%;
+}
+
+.sblink {
+position: absolute;
+z-index: -1;
+margin-top: 0%;
+background-color: #44444400;
+}
+
+/*over mij*/
+
+.aboutbody{
+height: 945px;
+width: 1920px;
+  background-color: #C9D4EB;
+
+}
+
+.aboutsidebar{
+  background-color: #DBE1EE;
+  width: 35%;
+  height: 100%;
+}
+
+.aboutimg {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*contact */
