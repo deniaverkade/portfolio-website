@@ -390,7 +390,13 @@ display: flex;
   background-color: #32293f00;
   color:rgba(50, 41, 63, 0.541);
   font-family: Jetbrains Mono;
-  font-size: 30px;
+  font-size: 26px;
+}
+.filterbuttons2{
+  background-color: #32293f00;
+  color:rgba(50, 41, 63, 0.541);
+  font-family: Jetbrains Mono;
+  font-size: 26px;
 }
 /* detail page */
 .detailbody {

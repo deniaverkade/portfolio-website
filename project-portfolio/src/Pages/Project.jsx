@@ -35,9 +35,9 @@ const Project = () => {
         <button className="filterbuttons">C#</button>
         </div>
         <div className="filterbox2">
-        <button className="filterbuttons">C++</button>
-        <button className="filterbuttons">Python</button>
-        <button className="filterbuttons">ReactJS</button>
+        <button className="filterbuttons2">C++</button>
+        <button className="filterbuttons2">Python</button>
+        <button className="filterbuttons2">ReactJS</button>
         </div>
         
         <button className="resetfilter">RESET FILTER</button>
