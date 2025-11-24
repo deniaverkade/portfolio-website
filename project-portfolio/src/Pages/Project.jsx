@@ -29,6 +29,17 @@ const Project = () => {
         <h1 className="projecth1">PROJECTEN</h1>
         <p className='propagetext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus tellus, auctor venenatis elementum ornare, consectetur vel mi. Maecenas gravida, augue non gravida porta, lectus felis tincidunt lectus, sed vehicula justo mi nec erat. </p>
         <h2 className="filtertitle">FILTERS</h2>
+        <div className="filterbox1">
+        <button className="filterbuttons">HTML/CSS</button>
+        <button className="filterbuttons">JavaScript</button>
+        <button className="filterbuttons">C#</button>
+        </div>
+        <div className="filterbox2">
+        <button className="filterbuttons">C++</button>
+        <button className="filterbuttons">Python</button>
+        <button className="filterbuttons">ReactJS</button>
+        </div>
+        
         <button className="resetfilter">RESET FILTER</button>
     </div>
         

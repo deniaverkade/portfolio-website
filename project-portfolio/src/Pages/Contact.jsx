@@ -1,25 +1,39 @@
 import { Link, Outlet } from 'react-router-dom';
+import ContactForm from "../components/ContactForm";
+import ButtonList from '../components/ButtonList';
+
 
 const  Contact= () => {
+    const downloadCV = () => {
+
+        fetch("../public/files/deniacv.pdf").then((response) =>{
+            response.blob().then((blob) => {
+                const fileURL =
+                window.URL.createObjectURL(blob);
+                let alink = document.createElement("a");
+                alink.href= fileURL;
+                alink.download = "DeniaCV.pdf"
+                alink.click();
+            });
+        });
+    };
     return ( <>
 
     <div className="contactbody">
-       <h2>Contact Opnemen</h2> 
+       <h2 className="contacttitle">CONTACT OPNEMEN</h2> 
        <div className="formcontainer">
 
-
+        <ContactForm/>
 
 
         </div>
-
-        <div className="buttoncontainer">
-        <div className="contactdivider2"/>
-        <button className="contactbuttons"><Link to="https://youtu.be/dQw4w9WgXcQ">Text</Link></button>
-        <button className="contactbuttons"><Link to="https://youtu.be/dQw4w9WgXcQ">Text</Link></button>
-        <button className="contactbuttons"><Link to="https://youtu.be/dQw4w9WgXcQ">Text</Link></button>
-        <div className="contactdivider3"/>
-        <button className="cvbutton"></button>
+        <h2 className="contacttitle2">HANDIGE LINKS</h2>
+        <div className="buttonbox">
+        <ButtonList/>
         </div>
+        <div className="contactdivider"/>
+        <button className="cvbutton" onClick={downloadCV}><p className="cvtext">CV DOWNLOADEN</p></button>
+        
     </div>
     </> );
 }

@@ -16,10 +16,10 @@ const ContactForm = () => {
   };
 
   return (
-    <form>
+    <form >
       <div>
         <label>
-          Naam:
+          Naam:<br></br>
           <input 
             type="text" 
             name="name"
@@ -28,11 +28,23 @@ const ContactForm = () => {
           />
         </label>
       </div>
+
+      <div>
+        <label>
+          Telefoonnummer:<br></br>
+          <input 
+            type="tel" 
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+        </label>
+      </div>
       
       <div>
         <label>
-          Email:
-          <input 
+          Emailadress:
+          <br></br><input 
             type="email" 
             name="email"
             value={formData.email}
@@ -43,7 +55,7 @@ const ContactForm = () => {
       
       <div>
         <label>
-          Bericht:
+          Bericht:<br></br>
           <textarea 
             name="message"
             value={formData.message}
@@ -53,11 +65,11 @@ const ContactForm = () => {
       </div>
       
       <div>
-        <h3>Preview:</h3>
-        <p>Naam: {formData.name}</p>
-        <p>Email: {formData.email}</p>
-        <p>Bericht: {formData.message}</p>
+        <input className="subres1" type="submit" value="Versturen"/>
+        
+
       </div>
+
     </form>
   );
 };
