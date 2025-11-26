@@ -1,6 +1,6 @@
 const projectData = [
     {id: 1, 
-     name:"Escape Room", 
+     name:"Game Website", 
      link:"https://github.com/TechniekCollegeRotterdam/project-escape-room-prisonbreak", 
      imgurl:"../public/images/placehold.png",
      bannerurl:"../public/images/placehold.png",
