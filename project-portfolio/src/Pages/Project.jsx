@@ -30,6 +30,7 @@ const Project = () => {
         <h1 className="projecth1">PROJECTEN</h1>
         <p className='propagetext'>
             Hier zijn verschillende projecten van mij te zien. Deze heb ik gemaakt voor school, en op de pagina's van de projecten zelf zijn er links naar de Github. Zo kun je ook de code inzien.
+            <br></br><b>Momenteel werken de filters niet.</b>
             </p>
         <h2 className="filtertitle">FILTERS</h2>
         <div className="filterbox1">

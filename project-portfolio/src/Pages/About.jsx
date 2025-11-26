@@ -30,16 +30,11 @@ const About = () => {
         <div className="aboutbox">
             <div className="aboutdivider2"></div>
 
-            <p className="abouttext2">Hier komt een beschrijving over mij als persoon. Ik geef een
-korte introductie voor mijzelf en wie ik ben en waar ik 
-vandaan kom. </p>
+            <p className="abouttext2">Toen ik eerst naar voortgezet onderwijs ging, kreeg ik als advies VMBO-TL. De school waarop ik zat was helaas in die tijd te veel voor mij, vanwege mijn autisme en ADD. Een tijdje werd ik naar 070watt gestuurd voor dagbesteding, tot ik uiteindelijk naar speciaal onderwijs ging. Ik kreeg eerst toen als advies kader, maar na een maand realizeerde de docenten dat ik te snel door de leerstof heen ging. Hetzelfde schooljaar kon ik naar MAVO, en stroomde ik uiteindelijk door naar HAVO 3, het pittigste jaar. Het is mij toch uitendelijk gelukt om HAVO af te ronden met een diploma. </p>
 
             <div className="aboutdivider2"></div>
             
-            <p className="abouttext2">Hier leg ik mijn motivatie uit en waarom ik graag de IT in wil.
-Zo kan de werknemer lezen dat ik een erg gemotiveerde 
-medewerker zal zijn en misschien een betere kans heb om 
-aangenomen te worden.</p>
+            <p className="abouttext2">IT heeft mij van kleins af aan al enorm veel geinteresseerd. Mijn eerste kennismaking was in basisschool, toen ik na school een kleine cursus met basis HTML en CSS. Ook keek ik veel videos over hoe games gemaakt worden en in elkaar zaten, en was ik veel bezig met het modden van games en hoe dit gedaan wordt. Uiteindelijk in voortgezet onderwijs heb ik een Informatica class kunnen volgen, en ik wil graag verder de IT in. Vanwege mijn autisme kan ik makkelijk patronen herkennen, waardoor het leren van nieuwe programmeertalen heel snel gaat. Ook vind ik het oplossen van problemen heel leuk, en dat is wat programmeren voor een groot gedeel is vanwege bug testing. Ik ben dus zeer gemotiveerd voor IT en ik heb er ook plezier bij. </p>
         </div>
     </div>
     </> );
