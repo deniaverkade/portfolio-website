@@ -24,6 +24,7 @@ const Project = () => {
         onShowDetail={goToDetail}/>
     )))
 
+    
     return ( <>
     <div className="projectbody">
         <h1 className="projecth1">PROJECTEN</h1>
@@ -42,7 +43,7 @@ const Project = () => {
         <button className="filterbuttons2">ReactJS</button>
         </div>
         
-        <button className="resetfilter">RESET FILTER</button>
+        <button className="resetfilter" onClick={projectMapping}>RESET FILTER</button>
     </div>
         
         <div className="projectlist">
