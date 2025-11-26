@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -14,9 +15,27 @@ const ContactForm = () => {
       [name]: value
     });
   };
+   const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_tf7tac8', 'template_azem9ik', form.current, {
+        publicKey: '8L8xs4jC26LRzBDkF',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
   return (
-    <form >
+    <form ref={form} onSubmit={sendEmail}>
       <div>
         <label>
           Naam:<br></br>
