@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Alert from '@mui/material/Alert';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -7,7 +8,7 @@ const ContactForm = () => {
     email: "",
     message: ""
   });
-
+let hiddenValue ="";
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({
@@ -27,9 +28,13 @@ const ContactForm = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          hiddenValue = "Email verstuurd!";
+          
         },
         (error) => {
           console.log('FAILED...', error.text);
+          hiddenValue = "Fout: " + error.text;
+          
         },
       );
   };
@@ -44,7 +49,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-          />
+           required />
         </label>
       </div>
 
@@ -68,7 +73,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-          />
+          required/>
         </label>
       </div>
 
@@ -79,12 +84,12 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-          />
+          required/>
         </label>
       </div>
 
       <div>
-        <input className="subres1" onClick={sendEmail} type="submit" value="Versturen" />
+        <input className="subres" onClick={sendEmail} type="submit" value="Versturen" />
 
 
       </div>

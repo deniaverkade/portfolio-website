@@ -642,29 +642,30 @@ textarea {
   padding: 10px;
 }
 
-.subres1 {
+.subres {
   width: 12%;
   background-color: #5B2F9A;
-  color: #dbe1ee;
+  color: #f6f9ff;
   height: 60px;
   margin-left: 29.5%;
   border-radius: 6px;
   font-family: Jockey One;
   font-size: 29px;
+  transition: all ease-in-out 0.3s;
 }
 
-.subres2 {
-  width: 11%;
-  background-color: #5B2F9A;
-  color: #dbe1ee;
-  height: 60px;
-  margin-left: -25%;
-  border-radius: 6px;
-  font-family: Jockey One;
-  font-size: 29px;
-
+.subres:hover {
+background-color: #49237e;
+transition: all ease-in-out 0.3s;
 }
-
+.subres:focus {
+background-color: #5B2F9A;
+transition: all ease-in-out 1s;
+}
+.subres:active{
+background-color: #34ff8f;
+transition: all ease-in-out 0.1s;
+}
 .buttonbox {
   display: flex;
   position: absolute;
@@ -735,8 +736,23 @@ textarea {
   margin-left: 62%;
   font-family: Jockey One;
   font-size: 60px;
+  transition: all ease-in-out 0.3s;
 }
 
+
+.cvbutton:hover {
+background-color: #796fa7;
+transition: all ease-in-out 0.3s;
+}
+.cvbutton:focus {
+background-color: #897EB9;
+transition: all ease-in-out 1s;
+}
+
+.cvbutton:active {
+  background-color: #34ff8f;
+transition: all ease-in-out 0.1s;
+}
 .cvtext {
   margin-top: -5%;
 }
