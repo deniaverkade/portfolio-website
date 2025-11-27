@@ -40,7 +40,7 @@ if (!projectFind) {
         </p>
         <div className="sidebardivider"/>
         <h2 className="sidebarheader">Link naar project:</h2>
-        <Link to={projectFind.link} className="sblink">[LINK]</Link>
+        <Link to={projectFind.link} target="_blank"className="sblink">[LINK]</Link>
         </div>
         </div>
     </> );

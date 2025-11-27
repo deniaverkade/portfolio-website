@@ -84,7 +84,7 @@ const ContactForm = () => {
       </div>
       
       <div>
-        <input className="subres1" type="submit" value="Versturen"/>
+        <input className="subres1" onClick={sendEmail} type="submit" value="Versturen"/>
         
 
       </div>
