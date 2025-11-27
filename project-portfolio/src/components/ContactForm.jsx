@@ -8,7 +8,7 @@ const ContactForm = () => {
     email: "",
     message: ""
   });
-let hiddenValue ="";
+  let hiddenValue = "";
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({
@@ -29,12 +29,12 @@ let hiddenValue ="";
         () => {
           console.log('SUCCESS!');
           hiddenValue = "Email verstuurd!";
-          
+
         },
         (error) => {
           console.log('FAILED...', error.text);
           hiddenValue = "Fout: " + error.text;
-          
+
         },
       );
   };
@@ -49,7 +49,7 @@ let hiddenValue ="";
             name="name"
             value={formData.name}
             onChange={handleChange}
-           required />
+            required />
         </label>
       </div>
 
@@ -73,7 +73,7 @@ let hiddenValue ="";
             name="email"
             value={formData.email}
             onChange={handleChange}
-          required/>
+            required />
         </label>
       </div>
 
@@ -84,7 +84,7 @@ let hiddenValue ="";
             name="message"
             value={formData.message}
             onChange={handleChange}
-          required/>
+            required />
         </label>
       </div>
 
