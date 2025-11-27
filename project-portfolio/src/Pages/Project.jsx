@@ -1,23 +1,56 @@
 import { Link, Outlet } from 'react-router-dom';
-import {projects} from "../projects";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import projectData from "../projects";
+import ProjectCard from '../components/ProjectCard';
 
 
 const Project = () => {
-    return ( <>
+    const navigate = useNavigate();
+    const [projectList, setProjectList] = useState(projectData);
+
+
+
+    const goToDetail = (projectId)=> {
+        navigate(`/projectdetail/${projectId}`);
+    };
+
+    const projectMapping = projectList.map((pro =>(
+        <ProjectCard
+        key={pro.id}
+        project={pro}
+        projectimg={pro.imgurl}
+        projectname={pro.name}
+        onShowDetail={goToDetail}/>
+    )))
+
     
+    return ( <>
     <div className="projectbody">
-        <div className="sideboxproject">
-            <h1>PROJECTEN</h1>
-        <p className="projectp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus tellus, auctor venenatis elementum ornare, consectetur vel mi. Maecenas gravida, augue non gravida porta, lectus felis tincidunt lectus, sed vehicula justo mi nec erat. Donec vel tempor massa, in posuere turpis. Morbi hendrerit aliquet malesuada. Sed placerat ornare dolor at dapibus. Integer mauris leo, faucibus in turpis at, pharetra malesuada libero. Sed maximus iaculis tortor placerat sollicitudin</p>
-        <h2>FILTERS</h2>
-        <button>RESET FILTER</button>
+        <h1 className="projecth1">PROJECTEN</h1>
+        <p className='propagetext'>
+            Hier zijn verschillende projecten van mij te zien. Deze heb ik gemaakt voor school, en op de pagina's van de projecten zelf zijn er links naar de Github. Zo kun je ook de code inzien.
+            <br></br><b>Momenteel werken de filters niet.</b>
+            </p>
+        <h2 className="filtertitle">FILTERS</h2>
+        <div className="filterbox1">
+        <button className="filterbuttons">HTML/CSS</button>
+        <button className="filterbuttons">JavaScript</button>
+        <button className="filterbuttons">C#</button>
+        </div>
+        <div className="filterbox2">
+        <button className="filterbuttons2">C++</button>
+        <button className="filterbuttons2">Python</button>
+        <button className="filterbuttons2">ReactJS</button>
         </div>
         
+        <button className="resetfilter" onClick={projectMapping}>RESET FILTER</button>
     </div>
         
         <div className="projectlist">
-<h1>Project pagina</h1>
-        <p className="projectp"><Link to="/projectdetail">Testlink voor detailpagina</Link></p>
+        <div className="containerProject">
+            {projectMapping}
+        </div>
         </div>
     
     </> );

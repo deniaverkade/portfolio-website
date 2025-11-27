@@ -3,8 +3,9 @@
 const NoPage = () => {
     return ( <>
 
-
-    <h1>Geen pagina gevonden</h1>
+<div className="nopagebody">
+    <h1 className="nopage">Geen pagina gevonden</h1>
+    </div>
     </> );
 }
  
