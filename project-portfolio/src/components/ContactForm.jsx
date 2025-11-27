@@ -15,7 +15,7 @@ const ContactForm = () => {
       [name]: value
     });
   };
-   const form = useRef();
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -39,8 +39,8 @@ const ContactForm = () => {
       <div>
         <label>
           Naam:<br></br>
-          <input 
-            type="text" 
+          <input
+            type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -51,41 +51,41 @@ const ContactForm = () => {
       <div>
         <label>
           Telefoonnummer:<br></br>
-          <input 
-            type="tel" 
+          <input
+            type="tel"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
           />
         </label>
       </div>
-      
+
       <div>
         <label>
           Emailadress:
-          <br></br><input 
-            type="email" 
+          <br></br><input
+            type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
           />
         </label>
       </div>
-      
+
       <div>
         <label>
           Bericht:<br></br>
-          <textarea 
+          <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
           />
         </label>
       </div>
-      
+
       <div>
-        <input className="subres1" onClick={sendEmail} type="submit" value="Versturen"/>
-        
+        <input className="subres1" onClick={sendEmail} type="submit" value="Versturen" />
+
 
       </div>
 
