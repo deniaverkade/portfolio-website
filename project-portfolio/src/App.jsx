@@ -28,7 +28,7 @@ function App() {
           <Route path="/projectdetail/:projectId" element={<ProjectDetail />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
   )
 
