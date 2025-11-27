@@ -17,7 +17,7 @@ function App() {
   return (
 
 
-    <HashRouter basename="/portfolio-website/">
+    <BrowserRouter basename="/portfolio-website/">
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
@@ -28,7 +28,7 @@ function App() {
           <Route path="/projectdetail/:projectId" element={<ProjectDetail />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
 
   )
 
